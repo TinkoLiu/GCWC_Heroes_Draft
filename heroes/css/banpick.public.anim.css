@@ -1,0 +1,11 @@
+@keyframes breathAnim{
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+body[client-status=hero] #headHighlight{
+	animation: breathAnim 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}

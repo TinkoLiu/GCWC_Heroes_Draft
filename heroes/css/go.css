@@ -1,0 +1,57 @@
+.session{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: url(../resources/gcwc-ui/topbar/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.blue{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-475px);
+    width: 340px;
+    text-align: center;
+    font-size: 2em;
+}
+.red{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(135px);
+    width: 340px;
+    text-align: center;
+    font-size: 2em;
+}
+.blueob{
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateY(-50%) translateX(-475px);
+    width: 340px;
+    text-align: center;
+}
+.redob{
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateY(-50%) translateX(135px);
+    width: 340px;
+    text-align: center;
+}
+.game{
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateY(-50%) translateX(-50%);
+    width: 340px;
+    text-align: center;
+    font-size: 1.2em;
+}
+a:link,a:visited{
+	color:#ffffff;
+}
+*{
+	font-family: "Microsoft YaHei";
+}

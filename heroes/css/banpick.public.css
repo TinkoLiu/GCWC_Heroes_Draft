@@ -1,0 +1,931 @@
+.heroesBlueFont{
+	background-color: #00b8ff;
+	background-image: -webkit-gradient(linear, 1 0, 0 bottom, from(rgb(0, 243, 255)), to(rgb(0, 7, 230)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.heroesRedFont{
+	background-color: #f00;
+	background-image: -webkit-gradient(linear, 0 0, 0 bottom, from(rgb(255, 211, 211)), to(rgb(255, 25, 25)));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#Topbar{
+	height: 140px;
+	position: absolute;
+	width: 100%
+}
+#centerTimer{
+	font-size: 58px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 152px;
+
+}
+#mapPanel{
+	z-index: 2;
+	position: relative;
+	margin-top: -94px;
+}
+.HeaderInfo{
+	position: relative;
+	z-index: 10;
+}
+#expiredContainer{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 11;
+	display: none;
+}
+#exchangeTops{
+    position: fixed;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2em;
+    background: rgba(0, 0, 0, 0.48);
+}
+#expiredContainer span{
+	width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5em;
+    transform: translateX(-50%) translateY(-50%);
+    text-shadow: 3px 0px 0px #000,-3px 0px 0px #000, 0px 3px 0px #000, 0px -3px 0px #000;
+}
+
+.HeaderInfo.HeadbarName{
+	top: 10px;
+	font-size: 35px;
+	width: 370px;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	position: absolute;
+	color: #525252;
+	margin-top: 48px;
+}
+.HeaderInfo.HeadbarName.ready{
+	color: #FFF;
+	margin-top: 48px;
+}
+#gameName{
+	position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+    font-size: 1.2em;
+}
+.HeaderInfo.BlueTeam.HeadbarName{
+	right: 50%;
+	margin-right: 118px;
+}
+.HeaderInfo.RedTeam.HeadbarName{
+	left: 50%;
+	margin-left: 118px;
+}
+.HeaderInfo.HeadbarTimePool{
+	width: 35px;
+	text-align: center;
+	font-size: 25px;
+	position: fixed;
+	top: 181px;
+    left: 50%;
+}
+#mapBG,#mapImg{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 32px;
+    z-index: 0;
+}
+#mapImg{
+	bottom: 38px;
+	z-index: 1;
+}
+#blueTimePool{
+	transform: translateX(-71px);
+}
+#redTimePool{
+	transform: translateX(35px);
+}
+.HeaderInfo.mapName{
+	font-size: 1.7em;
+    text-shadow: 1px 0px 0px #000,-1px 0px 0px #000, 0px 1px 0px #000, 0px -1px 0px #000;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0px;
+}
+#headTimeUp{
+	visibility: hidden;
+	margin-top: -116px;
+	z-index: 3;
+	opacity:0;
+	position: relative;
+	top: -4px;
+}
+
+#headMainBG{
+	z-index: 1;
+	position: relative;
+}
+
+#headHighlight{
+	opacity:0;
+	z-index: 10;
+	position: relative;
+	margin-top: -120px;
+}
+
+#centerContainer{
+	top: 150px;
+	bottom: 150px;
+	position: fixed;
+	width: 100%;
+}
+
+.centerMapBlock{
+	display: inline-table;
+	background: url("../resources/ui/mapPanel/board/normal.png");
+	width: 297px;
+	height: 195px;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	margin-top: 10px;
+}
+.centerMapBlock:hover{
+	background: url("../resources/ui/mapPanel/board/hover.png");
+	background-repeat: no-repeat;
+}
+.centerMapBlock.disabled{
+	background: url("../resources/ui/mapPanel/board/disabled.png");
+	background-repeat: no-repeat;
+}
+.centerMapBlock.selected{
+	background: url("../resources/ui/mapPanel/board/selected.png");
+	background-repeat: no-repeat;
+}
+
+.centerBlockInfo.mapName{
+	font-size: 25px;
+	top: -10px;
+	position: relative;
+}
+
+.centerBlockInfo.mapPreview{
+	width: 282px;
+	height: 133px;
+	top: -25px;
+	position: relative;
+}
+
+.centerAlignFixer{
+	margin: 0 auto;
+}
+
+.btnHeroes{
+	width: 292px;
+	height: 108px;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	border: 0px;
+	position: relative;
+	color:#FFF;
+	font-size: 2em;
+	text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+}
+.btnHeroes.blue{
+	background: url("../resources/ui/button/blue/normal.png");
+}
+.btnHeroes.blue:hover{
+	background: url("../resources/ui/button/blue/hover.png");
+}
+.btnHeroes.blue:active{
+	background: url("../resources/ui/button/blue/down.png");
+}
+.btnHeroes.blue:disabled{
+	background: url("../resources/ui/button/blue/disabled.png");
+	color:#555;
+}
+
+.btnHeroes.small{
+	width: 252px;
+	height: 90px;
+	font-size: 1.4em;
+}
+.btnHeroes.small.blue{
+	background: url("../resources/ui/button/blue_small/normal.png");
+}
+.btnHeroes.small.blue:hover{
+	background: url("../resources/ui/button/blue_small/hover.png");
+}
+.btnHeroes.small.blue:active{
+	background: url("../resources/ui/button/blue_small/down.png");
+}
+.btnHeroes.small.blue:disabled{
+	background: url("../resources/ui/button/blue_small/disabled.png");
+	color:#555;
+}
+.btnHeroes.small.red{
+	background: url("../resources/ui/button/red_small/normal.png");
+}
+.btnHeroes.small.red:hover{
+	background: url("../resources/ui/button/red_small/hover.png");
+}
+.btnHeroes.small.red:active{
+	background: url("../resources/ui/button/red_small/down.png");
+}
+.btnHeroes.small.red:disabled{
+	background: url("../resources/ui/button/red_small/disabled.png");
+	color:#555;
+}
+
+.btnHeroes.mini{
+	width: 212px;
+	height: 80px;
+	font-size: 1.28em;
+}
+.btnHeroes.mini.blue{
+	background: url("../resources/ui/button/blue_mini/normal.png");
+}
+.btnHeroes.mini.blue:hover{
+	background: url("../resources/ui/button/blue_mini/hover.png");
+}
+.btnHeroes.mini.blue:active{
+	background: url("../resources/ui/button/blue_mini/down.png");
+}
+.btnHeroes.mini.blue:disabled{
+	background: url("../resources/ui/button/blue_mini/disabled.png");
+	color:#555;
+}
+
+.btnDraft{
+	width: 260px;
+	height: 92px;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	border: 0px;
+	position: relative;
+	color:#FFF;
+	font-size: 2em;
+	background: url("../resources/ui/button/draft/standard/normal.png");
+}
+.btnDraft:hover{
+	background: url("../resources/ui/button/draft/standard/hover.png");
+}
+.btnDraft:active{
+	background: url("../resources/ui/button/draft/standard/selected.png");
+}
+.btnDraft:disabled{
+	background: url("../resources/ui/button/draft/standard/normal.png");
+	color:#555;
+}
+.btnDraft.ban{
+	background: url("../resources/ui/button/draft/ban/normal.png");
+}
+.btnDraft.ban:hover{
+	background: url("../resources/ui/button/draft/ban/hover.png");
+}
+.btnDraft.ban:active{
+	background: url("../resources/ui/button/draft/ban/selected.png");
+}
+.btnDraft.ban:disabled{
+	background: url("../resources/ui/button/draft/standard/normal.png");
+}
+.btnDraft.pick{
+	background: url("../resources/ui/button/draft/pick/normal.png");
+}
+.btnDraft.pick:hover{
+	background: url("../resources/ui/button/draft/pick/hover.png");
+}
+.btnDraft.pick:active{
+	background: url("../resources/ui/button/draft/pick/selected.png");
+}
+.btnDraft.pick:disabled{
+	background: url("../resources/ui/button/draft/standard/normal.png");
+}
+
+.btnMain{
+	width: 448px;
+	height: 107px;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	border: 0px;
+	position: relative;
+	color:#FFF;
+	font-size: 2em;
+	text-shadow: #000 1px 0 0,#000 0 1px 0,#000 -1px 0 0,#000 0 -1px 0;
+	background: url("../resources/ui/button/play/normal.png");
+}
+.btnMain:hover{
+	background: url("../resources/ui/button/play/hover.png");
+}
+.btnMain:active{
+	background: url("../resources/ui/button/play/down.png");
+}
+.btnMain:disabled{
+	background: url("../resources/ui/button/play/disabled.png");
+	color:#555;
+}
+#confirmBigButton[status=ban]:after{
+	position: absolute;
+	top: -62px;
+	transform: scaleX(0.5) scaleY(0.5);
+	left: -79px;
+	height: 240px;
+	width: 240px;
+	content: "";
+	background: url("../resources/ui/storm_ui_ranked_badge_locked_icon.png") 0 0 no-repeat;
+}
+#confirmBigButton[status=ban]:before{
+	content: "BAN: ";
+}
+#confirmBigButton[status=pick]:after{
+	position: absolute;
+	top: -2px;
+    transform: scaleX(0.9) scaleY(0.9);
+    left: -11px;
+	height: 105px;
+	width: 118px;
+	content: "";
+	background: url("../resources/ui/icons/storm_heroquest_icon_complete.png") 0 0 no-repeat;
+}
+#confirmBigButton[status=pick]:before{
+	content: "PICK: ";
+}
+
+#bottomMapContainer{
+	display: inline-table;
+}
+
+#readyBtnContainer{
+	width: 100%;
+	position: fixed;
+	top: 50%;
+	margin-top: -35px;
+}
+#readyButton.left{
+	margin-right: 50%;
+}
+#readyButton.right{
+	margin-left: 50%;
+}
+
+#confirmContainer{
+	width: 100%;
+	position: fixed;
+	bottom: 135px;
+	margin-top: -35px;
+}
+
+#heroesButtonContainer{
+	position: fixed;
+	height: 450px;
+	width: 100%;
+	overflow: visible;
+	top: 300px;
+}
+#pageArrowContainer{
+	top: 50%;
+	left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+	position: absolute;
+	width: 90%
+}
+#pageArrowContainer #leftPage{
+	float: left;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	border: 0px;
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_leftarrow_normal.png");
+	width: 76px;
+	height: 123px;
+}
+#pageArrowContainer #leftPage:hover{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_leftarrow_hover.png");
+}
+#pageArrowContainer #leftPage:active{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_leftarrow_down.png");
+}
+#pageArrowContainer #leftPage:disabled{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_leftarrow_disabled.png");
+}
+#pageArrowContainer #rightPage{
+	float: right;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	border: 0px;
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_rightarrow_normal.png");
+	width: 76px;
+	height: 123px;
+}
+#pageArrowContainer #rightPage:hover{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_rightarrow_hover.png");
+}
+#pageArrowContainer #rightPage:active{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_rightarrow_down.png");
+}
+#pageArrowContainer #rightPage:disabled{
+	background: url("../resources/ui/button/navigator/arrow/ui_quests_questlog_rightarrow_disabled.png");
+}
+
+
+.heroButtonGroup{
+	display: inline-flex;
+}
+.heroButtonGroup:last-child{
+	width: 880px;
+}
+
+.groupContainer{
+	top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    position: absolute;
+    width: 70%;
+}
+
+.heroButton{
+	width: 114px;
+	height: 130px;
+	transform: scale(0.8);
+	background: url("../resources/ui/heroes/select/storm_ui_ingame_heroselect_btn_placeholder.png");
+	background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    margin-right: -13px;
+    margin-left: -13px;
+    margin-top: -59px;
+    filter: brightness(0.72);
+}
+.heroButton.ban{
+	filter: grayscale(100%);
+}
+.heroButton:hover{
+	filter:brightness(0.8);
+}
+.heroButton[status=selected]{
+	filter:brightness(1);
+}
+.heroButton[status=locked]{
+	filter:grayscale(1) brightness(0.5);
+}
+.heroButton[status=Team1Pick]{
+	filter:grayscale(1) brightness(0.5);
+}
+.heroButton[status=Team2Pick]{
+	filter:grayscale(1) brightness(0.5);
+}
+.heroButton[status=disabled]{
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+}
+
+.mapBlock{
+	width: 146px;
+	height: 54px;
+	text-decoration: none;
+	outline: none;
+	background-repeat: no-repeat;
+	padding-right: 0px;
+	position: relative;
+	float: left;
+	color: #a6a6a6;
+}
+.mapBlock.ban{
+	background: url("../resources/ui/mapPanel/bottom/gray/disabled.png");
+}
+.mapBlock.ban.active{
+	background: url("../resources/ui/mapPanel/bottom/gray/normal.png");
+}
+.mapBlock.ban.selected{
+	background: url("../resources/ui/mapPanel/bottom/gray/down.png");
+}
+.mapBlock.ban.broken{
+	background: url("../resources/ui/mapPanel/bottom/gray/down.png");
+}
+.mapBlock.blue{
+	background: url("../resources/ui/mapPanel/bottom/blue/disabled.png");
+}
+.mapBlock.blue.active{
+	background: url("../resources/ui/mapPanel/bottom/blue/down.png");
+}
+.mapBlock.blue.selected{
+	background: url("../resources/ui/mapPanel/bottom/blue/hover.png");
+}
+.mapBlock.blue.broken{
+	background: url("../resources/ui/mapPanel/bottom/blue/down.png");
+}
+.mapBlock.red{
+	background: url("../resources/ui/mapPanel/bottom/red/disabled.png");
+}
+.mapBlock.red.active{
+	background: url("../resources/ui/mapPanel/bottom/red/down.png");
+}
+.mapBlock.red.selected{
+	background: url("../resources/ui/mapPanel/bottom/red/hover.png");
+}
+.mapBlock.red.broken{
+	background: url("../resources/ui/mapPanel/bottom/red/down.png");
+}
+
+.bottomBlockInfo.mapName{
+	position: absolute;
+	top: 18px;
+	width: 100%;
+	left: 0px;
+	z-index: 1;
+}
+
+.bottomBlockInfo{
+	position: relative;
+	top: -8px;
+}
+
+body{
+	text-align:center;
+}
+
+.hero{
+	display: inline-block;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	text-align: left;
+	background-size: contain;
+}
+div[data-id=Team2] .hero:after{
+	transform: scaleX(-0.6) scaleY(0.6);
+}
+.hero .icon-wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+}
+.icon img{
+    content:url("../resources/gcwc-ui/heroes/null.png");
+}
+.hero .icon-wrap img{
+    position: relative;
+    left: 60px;
+    transform: scale(1.1);
+    top: 41px;
+}
+.hero .icon-wrap .icon{
+	display: inline-block;
+	height: 68px;
+	width: 68px;
+	text-align: center;
+}
+.hero .statusImg {
+    position: absolute;
+    left: 61px;
+    top: 58px;
+    transform: scale(0.8);
+}
+div[data-id="Team1Pick1"]{
+	position: fixed;
+	top: 110px;
+	left: 157px;
+}
+div[data-id="Team1Pick2"]{
+	position: fixed;
+	top: 252px;
+	left: 249px;
+}
+div[data-id="Team1Pick3"]{
+	position: fixed;
+	top: 400px;
+	left: 157px;
+}
+div[data-id="Team1Pick4"]{
+	position: fixed;
+	top: 550px;
+	left: 249px;
+}
+div[data-id="Team1Pick5"]{
+	position: fixed;
+	top: 690px;
+	left: 157px;
+}
+div[data-id="Team2Pick1"]{
+	position: fixed;
+	top: 100px;
+	left: 1578px;
+}
+div[data-id="Team2Pick2"]{
+	position: fixed;
+	top: 250px;
+	left: 1487px;
+}
+div[data-id="Team2Pick3"]{
+	position: fixed;
+	top: 390px;
+	left: 1578px;
+}
+div[data-id="Team2Pick4"]{
+	position: fixed;
+	top: 540px;
+	left: 1487px;
+}
+div[data-id="Team2Pick5"]{
+	position: fixed;
+	top: 680px;
+	left: 1578px;
+}
+div[data-id="Team1Ban1"]{
+	left: 625px;
+}
+div[data-id="Team1Ban2"]{
+	left: 485px;
+}
+div[data-id="Team2Ban1"]{
+	left: 1185px;
+}
+div[data-id="Team2Ban2"]{
+	left: 1325px;
+}
+
+
+.TeamBannedContainer{
+	margin-top: -13px;
+}
+
+#heroesDragArea .icon-wrap{
+	background: url("../resources/gcwc-ui/draft/board/blue.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.TeamSelectedContainer[data-id=Team1] .icon-wrap,#playerPositionContainer #resultArea #Team1DisplayArea .icon-wrap{
+	background: url("../resources/gcwc-ui/draft/board/blue.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.TeamSelectedContainer[data-id=Team2] .icon-wrap,#playerPositionContainer #resultArea #Team2DisplayArea .icon-wrap{
+	background: url("../resources/gcwc-ui/draft/board/red.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.TeamBannedContainer .icon-wrap{
+	background: url("../resources/gcwc-ui/draft/board/ban.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+
+
+#bannedArea .hero{
+	display: inline-block;
+	position: fixed;
+	width: 120px;
+	height: 120px;
+	text-align: left;
+	bottom: 20px;
+}
+#bannedArea div[data-id=Team2] .hero:after{
+	transform: scaleX(-0.6) scaleY(0.6);
+}
+#bannedArea .hero .icon-wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	display: inline-block;
+	overflow: visible;
+}
+#bannedArea img{
+	top: 21px;
+	left: 23px;
+    height: 70px;
+    width: 65px;
+    filter: grayscale(60%);
+    -webkit-filter: grayscale(60%);
+    -moz-filter: grayscale(60%);
+    -ms-filter: grayscale(60%);
+    -o-filter: grayscale(60%);
+    content:url("../resources/gcwc-ui/heroes/null.png");
+}
+#bannedArea .hero .icon-wrap .icon{
+	display: inline-block;
+	overflow: hidden;
+	-webkit-transform: scaleX(2.5) scaleY(1.22) rotate(45deg) translate(20px, 8px);
+	-moz-transform: scaleX(2.5) scaleY(1.22) rotate(45deg) translate(20px, 8px);
+	transform: scaleX(2.5) scaleY(1.22) rotate(45deg) translate(20px, 8px);
+	height: 68px;
+	width: 68px;
+	text-align: center;
+}
+#bannedArea .hero .statusImg{
+	position: absolute;
+	left: 15px;
+	top: 28px;
+	transform: scale(0.6,0.6);
+}
+
+.statusImg:after{
+	content:url("../resources/gcwc-ui/draft/unconfirm.png");
+}
+.selected .statusImg:after{
+	opacity: 0;
+}
+.working .statusImg{
+    animation: workingAnim 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes workingAnim
+{
+from {top: 40px;}
+to {top: 58px;}
+}
+@keyframes banWorkingAnim
+{
+from {top: 10px;}
+to {top: 28px;}
+}
+
+.lockImg{
+	position: absolute;
+    left: -20px;
+    top: 12px;
+    transform: scaleX(0.4) scaleY(0.4);
+}
+
+#waitingPositionHolder{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%);
+	font-size: 3em;
+	display: none;
+}
+
+body[client-status=position] #centerContainer, body[client-status=lobby] #centerContainer{
+	display: none;
+}
+body[client-status=position]:not(.team) #centerContainer,body[client-status=position]:not(.team) #waitingPositionHolder{
+	display: unset;
+}
+body[client-status=lobby] #confirmContainer,body[client-status=position] #confirmContainer,body[client-status=completed] #confirmContainer,body:not(.team) #confirmContainer{
+	display: none;
+}
+body[client-status=position] #heroesButtonContainer, body[client-status=lobby] #heroesButtonContainer{
+	display: none;
+}
+body[client-status=position] #readyBtnContainer,body[client-status=draft] #readyBtnContainer,body[client-status=completed] #readyBtnContainer,body:not(.team) #readyBtnContainer{
+	display: none;
+}
+body[client-status=lobby] #playerPositionContainer,body[client-status=hero] #playerPositionContainer,body[client-status=draft] #playerPositionContainer,body:not(.team) #playerPositionContainer{
+	display: none;
+}
+body[client-status=completed] #operatingArea{
+	display: none;
+}
+body[client-status=completed] #heroesButtonContainer{
+	display: none;
+}
+body.team[client-status=completed] #selectedArea{
+	display: none;
+}
+body[client-status=completed]:not(.team) #playerPositionContainer{
+	display: unset;
+}
+body:not([client-status=completed]) #resultArea{
+	display: none;
+}
+body[client-status=completed] #centerTimer,body[client-status=completed] #blueTimePool,body[client-status=completed] #redTimePool{
+	display: none;
+}
+body[client-status=position] #centerTimer,body[client-status=completed] #blueTimePool,body[client-status=completed] #redTimePool{
+	display: none;
+}
+
+.heroName{
+    width: 115px;
+    position: absolute;
+    font-size: medium;
+    z-index: 1;
+    top: 73px;
+}
+[data-id="Team1"] .heroName,#Team1DisplayArea .heroName{
+	transform: rotate(30.5deg) scale(0.85);
+    transform-origin: left;
+    left: 25px;
+	top: 108px;
+    font-size: medium;
+}
+#heroesDragArea .heroName{
+	transform: rotate(30.5deg) scale(0.85);
+    transform-origin: left;
+    left: 25px;
+	top: 111px;
+    font-size: medium;
+}
+[data-id="Team2"] .heroName,#Team2DisplayArea .heroName{
+	transform: rotate(-30deg) scale(0.85);
+    transform-origin: right;
+    left: 60px;
+    top: 108px;
+    text-align: right;
+}
+#bannedArea .hero .heroName{
+	transform: unset;
+    transform-origin: unset;
+    left: 23px;
+    top: 103px;
+    text-align: unset;
+	font-size: small;
+}
+
+#playerPositionContainer{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+#heroesDragArea{
+	margin: 0px;
+	padding: 0px;
+	width: 1200px;
+}
+#operatingArea{
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	width: 100%;
+	height: 300px;
+    padding-left: 112px;
+    background: rgba(0, 0, 0, 0.48);
+}
+#resultArea{
+	height: 550px;
+	width: 1080px;
+	top: 525px;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	position: fixed;
+	background: rgba(0, 0, 0, 0.48);
+}
+#resultArea .heroArea{
+	height: 200px;
+	position: relative;
+}
+#resultArea .nameArea{
+	height: 50px;
+	position: relative;
+}
+#playerNameArea{
+	position: absolute;
+	top: 200px;
+	height: 50px;
+    width: 1200px;
+}
+.playerNameHolder{
+	height: 100%;
+	width: 19%;
+	display: inline-block;
+	font-size: 2em;
+    top: -20px;
+    position: relative;
+}
+#positionConfirm{
+	position: absolute;
+    height: 118px;
+    width: 105px;
+    border: 0px;
+    top: 55px;
+    right: 400px;
+    text-decoration: none;
+    outline: none;
+    content: "";
+    background: url(../resources/ui/icons/storm_heroquest_icon_complete.png) 0 0 no-repeat;
+}
+#positionConfirm:hover{
+    background: url(../resources/ui/icons/storm_heroquest_icon_complete_highlight.png) 0 0 no-repeat;
+}
+#positionConfirm:active{
+    background: url(../resources/ui/icons/storm_heroquest_icon_complete_active.png) 0 0 no-repeat;
+}
+#heroesDragArea .hero{
+	float: left;
+    margin-left: 37px;
+}
+*{
+	font-family: "Microsoft YaHei";
+}

@@ -1,0 +1,413 @@
+.hero[hero-code][status=working] img{
+	opacity: 0.5;
+}
+.hero[hero-code][status=confirmed] .statusImg{
+	opacity: 0;
+}
+.hero[status=working] .statusImg{
+    animation: workingAnim 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+#bannedArea .hero[status=working] .statusImg{
+    animation: banWorkingAnim 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    opacity: 1;
+}
+#selectedArea div[data-id=Team1] .hero[status=working]{
+	background-image:url("../resources/gcwc-ui/draft/board/blueactive.png");
+}
+#selectedArea div[data-id=Team2] .hero[status=working]{
+	background-image:url("../resources/gcwc-ui/draft/board/redactive.png");
+}
+#bannedArea div[data-id=Team1] .hero[status=working]{
+	background-image:url("../resources/gcwc-ui/draft/board/banblueactive.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -7px -6px;
+}
+#bannedArea div[data-id=Team2] .hero[status=working]{
+	background-image:url("../resources/gcwc-ui/draft/board/banredactive.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -7px -6px;
+}
+
+
+.hero[hero-code=random] img{
+	content: url("../resources/gcwc-ui/heroes/storm_ui_glues_draft_portrait_random.png")!important;
+}
+.hero[hero-code=abathur] img{
+	content: url("../resources/gcwc-ui/heroes/abathur.png")!important;
+}
+.hero[hero-code=alarak] img{
+	content: url("../resources/gcwc-ui/heroes/alarak.png")!important;
+}
+.hero[hero-code=anubarak] img{
+	content: url("../resources/gcwc-ui/heroes/anubarak.png")!important;
+}
+.hero[hero-code=artanis] img{
+	content: url("../resources/gcwc-ui/heroes/artanis.png")!important;
+}
+.hero[hero-code=arthas] img{
+	content: url("../resources/gcwc-ui/heroes/arthas.png")!important;
+}
+.hero[hero-code=auriel] img{
+	content: url("../resources/gcwc-ui/heroes/auriel.png")!important;
+}
+.hero[hero-code=azmodan] img{
+	content: url("../resources/gcwc-ui/heroes/azmodan.png")!important;
+}
+.hero[hero-code=brightwing] img{
+	content: url("../resources/gcwc-ui/heroes/brightwing.png")!important;
+}
+.hero[hero-code=chen] img{
+	content: url("../resources/gcwc-ui/heroes/chen.png")!important;
+}
+.hero[hero-code=cho] img{
+	content: url("../resources/gcwc-ui/heroes/cho.png")!important;
+}
+.hero[hero-code=chogall] img{
+	content: url("../resources/gcwc-ui/heroes/cho.png")!important;
+}
+.hero[hero-code=chromie] img{
+	content: url("../resources/gcwc-ui/heroes/chromie.png")!important;
+}
+.hero[hero-code=dehaka] img{
+	content: url("../resources/gcwc-ui/heroes/dehaka.png")!important;
+}
+.hero[hero-code=diablo] img{
+	content: url("../resources/gcwc-ui/heroes/diablo.png")!important;
+}
+.hero[hero-code=etc] img{
+	content: url("../resources/gcwc-ui/heroes/etc.png")!important;
+}
+.hero[hero-code=falstad] img{
+	content: url("../resources/gcwc-ui/heroes/falstad.png")!important;
+}
+.hero[hero-code=gall] img{
+	content: url("../resources/gcwc-ui/heroes/gall.png")!important;
+}
+.hero[hero-code=gazlowe] img{
+	content: url("../resources/gcwc-ui/heroes/gazlowe.png")!important;
+}
+.hero[hero-code=greymane] img{
+	content: url("../resources/gcwc-ui/heroes/greymane.png")!important;
+}
+.hero[hero-code=guldan] img{
+	content: url("../resources/gcwc-ui/heroes/guldan.png")!important;
+}
+.hero[hero-code=illidan] img{
+	content: url("../resources/gcwc-ui/heroes/illidan.png")!important;
+}
+.hero[hero-code=jaina] img{
+	content: url("../resources/gcwc-ui/heroes/jaina.png")!important;
+}
+.hero[hero-code=johanna] img{
+	content: url("../resources/gcwc-ui/heroes/johanna.png")!important;
+}
+.hero[hero-code=kaelthas] img{
+	content: url("../resources/gcwc-ui/heroes/kaelthas.png")!important;
+}
+.hero[hero-code=kerrigan] img{
+	content: url("../resources/gcwc-ui/heroes/kerrigan.png")!important;
+}
+.hero[hero-code=kharazim] img{
+	content: url("../resources/gcwc-ui/heroes/kharazim.png")!important;
+}
+.hero[hero-code=leoric] img{
+	content: url("../resources/gcwc-ui/heroes/leoric.png")!important;
+}
+.hero[hero-code=li-ming] img{
+	content: url("../resources/gcwc-ui/heroes/li-ming.png")!important;
+}
+.hero[hero-code=lili] img{
+	content: url("../resources/gcwc-ui/heroes/lili.png")!important;
+}
+.hero[hero-code=lt-morales] img{
+	content: url("../resources/gcwc-ui/heroes/lt-morales.png")!important;
+}
+.hero[hero-code=lunara] img{
+	content: url("../resources/gcwc-ui/heroes/lunara.png")!important;
+}
+.hero[hero-code=malfurion] img{
+	content: url("../resources/gcwc-ui/heroes/malfurion.png")!important;
+}
+.hero[hero-code=medivh] img{
+	content: url("../resources/gcwc-ui/heroes/medivh.png")!important;
+}
+.hero[hero-code=muradin] img{
+	content: url("../resources/gcwc-ui/heroes/muradin.png")!important;
+}
+.hero[hero-code=murky] img{
+	content: url("../resources/gcwc-ui/heroes/murky.png")!important;
+}
+.hero[hero-code=nazeebo] img{
+	content: url("../resources/gcwc-ui/heroes/nazeebo.png")!important;
+}
+.hero[hero-code=nova] img{
+	content: url("../resources/gcwc-ui/heroes/nova.png")!important;
+}
+.hero[hero-code=ragnaros] img{
+	content: url("../resources/gcwc-ui/heroes/ragnaros.png")!important;
+}
+.hero[hero-code=raynor] img{
+	content: url("../resources/gcwc-ui/heroes/raynor.png")!important;
+}
+.hero[hero-code=rehgar] img{
+	content: url("../resources/gcwc-ui/heroes/rehgar.png")!important;
+}
+.hero[hero-code=rexxar] img{
+	content: url("../resources/gcwc-ui/heroes/rexxar.png")!important;
+}
+.hero[hero-code=samuro] img{
+	content: url("../resources/gcwc-ui/heroes/samuro.png")!important;
+}
+.hero[hero-code=sgt-hammer] img{
+	content: url("../resources/gcwc-ui/heroes/sgt-hammer.png")!important;
+}
+.hero[hero-code=sonya] img{
+	content: url("../resources/gcwc-ui/heroes/sonya.png")!important;
+}
+.hero[hero-code=stitches] img{
+	content: url("../resources/gcwc-ui/heroes/stitches.png")!important;
+}
+.hero[hero-code=sylvanas] img{
+	content: url("../resources/gcwc-ui/heroes/sylvanas.png")!important;
+}
+.hero[hero-code=tassadar] img{
+	content: url("../resources/gcwc-ui/heroes/tassadar.png")!important;
+}
+.hero[hero-code=the-butcher] img{
+	content: url("../resources/gcwc-ui/heroes/the-butcher.png")!important;
+}
+.hero[hero-code=the-lost-vikings] img{
+	content: url("../resources/gcwc-ui/heroes/the-lost-vikings.png")!important;
+}
+.hero[hero-code=thrall] img{
+	content: url("../resources/gcwc-ui/heroes/thrall.png")!important;
+}
+.hero[hero-code=tracer] img{
+	content: url("../resources/gcwc-ui/heroes/tracer.png")!important;
+}
+.hero[hero-code=tychus] img{
+	content: url("../resources/gcwc-ui/heroes/tychus.png")!important;
+}
+.hero[hero-code=tyrael] img{
+	content: url("../resources/gcwc-ui/heroes/tyrael.png")!important;
+}
+.hero[hero-code=tyrande] img{
+	content: url("../resources/gcwc-ui/heroes/tyrande.png")!important;
+}
+.hero[hero-code=uther] img{
+	content: url("../resources/gcwc-ui/heroes/uther.png")!important;
+}
+.hero[hero-code=valla] img{
+	content: url("../resources/gcwc-ui/heroes/valla.png")!important;
+}
+.hero[hero-code=varian] img{
+	content: url("../resources/gcwc-ui/heroes/varian.png")!important;
+}
+.hero[hero-code=xul] img{
+	content: url("../resources/gcwc-ui/heroes/xul.png")!important;
+}
+.hero[hero-code=zagara] img{
+	content: url("../resources/gcwc-ui/heroes/zagara.png")!important;
+}
+.hero[hero-code=zarya] img{
+	content: url("../resources/gcwc-ui/heroes/zarya.png")!important;
+}
+.hero[hero-code=zeratul] img{
+	content: url("../resources/gcwc-ui/heroes/zeratul.png")!important;
+}
+
+
+
+
+.heroButton[hero-code=random] {
+	background-image: url("../resources/gcwc-ui/heroesButton/storm_ui_ingame_heroselect_btn_placeholder.png");
+}
+.heroButton[hero-code=abathur] {
+	background-image: url("../resources/gcwc-ui/heroesButton/abathur.png");
+}
+.heroButton[hero-code=alarak] {
+	background-image: url("../resources/gcwc-ui/heroesButton/alarak.png");
+}
+.heroButton[hero-code=anubarak] {
+	background-image: url("../resources/gcwc-ui/heroesButton/anubarak.png");
+}
+.heroButton[hero-code=artanis] {
+	background-image: url("../resources/gcwc-ui/heroesButton/artanis.png");
+}
+.heroButton[hero-code=arthas] {
+	background-image: url("../resources/gcwc-ui/heroesButton/arthas.png");
+}
+.heroButton[hero-code=auriel] {
+	background-image: url("../resources/gcwc-ui/heroesButton/auriel.png");
+}
+.heroButton[hero-code=azmodan] {
+	background-image: url("../resources/gcwc-ui/heroesButton/azmodan.png");
+}
+.heroButton[hero-code=brightwing] {
+	background-image: url("../resources/gcwc-ui/heroesButton/brightwing.png");
+}
+.heroButton[hero-code=chen] {
+	background-image: url("../resources/gcwc-ui/heroesButton/chen.png");
+}
+.heroButton[hero-code=cho] {
+	background-image: url("../resources/gcwc-ui/heroesButton/cho.png");
+}
+.heroButton[hero-code=chromie] {
+	background-image: url("../resources/gcwc-ui/heroesButton/chromie.png");
+}
+.heroButton[hero-code=dehaka] {
+	background-image: url("../resources/gcwc-ui/heroesButton/dehaka.png");
+}
+.heroButton[hero-code=diablo] {
+	background-image: url("../resources/gcwc-ui/heroesButton/diablo.png");
+}
+.heroButton[hero-code=etc] {
+	background-image: url("../resources/gcwc-ui/heroesButton/etc.png");
+}
+.heroButton[hero-code=falstad] {
+	background-image: url("../resources/gcwc-ui/heroesButton/falstad.png");
+}
+.heroButton[hero-code=gall] {
+	background-image: url("../resources/gcwc-ui/heroesButton/gall.png");
+}
+.heroButton[hero-code=gazlowe] {
+	background-image: url("../resources/gcwc-ui/heroesButton/gazlowe.png");
+}
+.heroButton[hero-code=greymane] {
+	background-image: url("../resources/gcwc-ui/heroesButton/greymane.png");
+}
+.heroButton[hero-code=guldan] {
+	background-image: url("../resources/gcwc-ui/heroesButton/guldan.png");
+}
+.heroButton[hero-code=illidan] {
+	background-image: url("../resources/gcwc-ui/heroesButton/illidan.png");
+}
+.heroButton[hero-code=jaina] {
+	background-image: url("../resources/gcwc-ui/heroesButton/jaina.png");
+}
+.heroButton[hero-code=johanna] {
+	background-image: url("../resources/gcwc-ui/heroesButton/johanna.png");
+}
+.heroButton[hero-code=kaelthas] {
+	background-image: url("../resources/gcwc-ui/heroesButton/kaelthas.png");
+}
+.heroButton[hero-code=kerrigan] {
+	background-image: url("../resources/gcwc-ui/heroesButton/kerrigan.png");
+}
+.heroButton[hero-code=kharazim] {
+	background-image: url("../resources/gcwc-ui/heroesButton/kharazim.png");
+}
+.heroButton[hero-code=leoric] {
+	background-image: url("../resources/gcwc-ui/heroesButton/leoric.png");
+}
+.heroButton[hero-code=li-ming] {
+	background-image: url("../resources/gcwc-ui/heroesButton/li-ming.png");
+}
+.heroButton[hero-code=lili] {
+	background-image: url("../resources/gcwc-ui/heroesButton/lili.png");
+}
+.heroButton[hero-code=lt-morales] {
+	background-image: url("../resources/gcwc-ui/heroesButton/lt-morales.png");
+}
+.heroButton[hero-code=lunara] {
+	background-image: url("../resources/gcwc-ui/heroesButton/lunara.png");
+}
+.heroButton[hero-code=malfurion] {
+	background-image: url("../resources/gcwc-ui/heroesButton/malfurion.png");
+}
+.heroButton[hero-code=medivh] {
+	background-image: url("../resources/gcwc-ui/heroesButton/medivh.png");
+}
+.heroButton[hero-code=muradin] {
+	background-image: url("../resources/gcwc-ui/heroesButton/muradin.png");
+}
+.heroButton[hero-code=murky] {
+	background-image: url("../resources/gcwc-ui/heroesButton/murky.png");
+}
+.heroButton[hero-code=nazeebo] {
+	background-image: url("../resources/gcwc-ui/heroesButton/nazeebo.png");
+}
+.heroButton[hero-code=nova] {
+	background-image: url("../resources/gcwc-ui/heroesButton/nova.png");
+}
+.heroButton[hero-code=ragnaros] {
+	background-image: url("../resources/gcwc-ui/heroesButton/ragnaros.png");
+}
+.heroButton[hero-code=raynor] {
+	background-image: url("../resources/gcwc-ui/heroesButton/raynor.png");
+}
+.heroButton[hero-code=rehgar] {
+	background-image: url("../resources/gcwc-ui/heroesButton/rehgar.png");
+}
+.heroButton[hero-code=rexxar] {
+	background-image: url("../resources/gcwc-ui/heroesButton/rexxar.png");
+}
+.heroButton[hero-code=samuro] {
+	background-image: url("../resources/gcwc-ui/heroesButton/samuro.png");
+}
+.heroButton[hero-code=sgt-hammer] {
+	background-image: url("../resources/gcwc-ui/heroesButton/sgt-hammer.png");
+}
+.heroButton[hero-code=sonya] {
+	background-image: url("../resources/gcwc-ui/heroesButton/sonya.png");
+}
+.heroButton[hero-code=stitches] {
+	background-image: url("../resources/gcwc-ui/heroesButton/stitches.png");
+}
+.heroButton[hero-code=sylvanas] {
+	background-image: url("../resources/gcwc-ui/heroesButton/sylvanas.png");
+}
+.heroButton[hero-code=tassadar] {
+	background-image: url("../resources/gcwc-ui/heroesButton/tassadar.png");
+}
+.heroButton[hero-code=the-butcher] {
+	background-image: url("../resources/gcwc-ui/heroesButton/the-butcher.png");
+}
+.heroButton[hero-code=the-lost-vikings] {
+	background-image: url("../resources/gcwc-ui/heroesButton/the-lost-vikings.png");
+}
+.heroButton[hero-code=thrall] {
+	background-image: url("../resources/gcwc-ui/heroesButton/thrall.png");
+}
+.heroButton[hero-code=tracer] {
+	background-image: url("../resources/gcwc-ui/heroesButton/tracer.png");
+}
+.heroButton[hero-code=tychus] {
+	background-image: url("../resources/gcwc-ui/heroesButton/tychus.png");
+}
+.heroButton[hero-code=tyrael] {
+	background-image: url("../resources/gcwc-ui/heroesButton/tyrael.png");
+}
+.heroButton[hero-code=tyrande] {
+	background-image: url("../resources/gcwc-ui/heroesButton/tyrande.png");
+}
+.heroButton[hero-code=uther] {
+	background-image: url("../resources/gcwc-ui/heroesButton/uther.png");
+}
+.heroButton[hero-code=valla] {
+	background-image: url("../resources/gcwc-ui/heroesButton/valla.png");
+}
+.heroButton[hero-code=varian] {
+	background-image: url("../resources/gcwc-ui/heroesButton/varian.png");
+}
+.heroButton[hero-code=xul] {
+	background-image: url("../resources/gcwc-ui/heroesButton/xul.png");
+}
+.heroButton[hero-code=zagara] {
+	background-image: url("../resources/gcwc-ui/heroesButton/zagara.png");
+}
+.heroButton[hero-code=zarya] {
+	background-image: url("../resources/gcwc-ui/heroesButton/zarya.png");
+}
+.heroButton[hero-code=zeratul] {
+	background-image: url("../resources/gcwc-ui/heroesButton/zeratul.png");
+}
