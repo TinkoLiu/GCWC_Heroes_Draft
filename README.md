@@ -28,3 +28,7 @@ Memcache support was changed to using a database table for a fake realization as
 Create a draft session in `/heroes/create.gcwc.php`.
 
 To join a draft session, use `/heroes/go.php`.
+
+## Notice
+According to the live executor of GCWC (Neither Blizzard nor NetEase, they were sponsors and organizers), the draft system won't take any action when the timer went 0.
+If you need the auto-lockin, go `/heroes/include/judge.inc.php` and uncomment line 99-112.
